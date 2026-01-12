@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frida – Profumeria Artistica</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root{
+ --rosa-chiaro:#fde6f1;
+ --rosa-medio:#f6b3d0;
+ --rosa-intenso:#e88bb8;
+ --rosa-scuro:#b94b7b;
+ --testo:#4a1f33;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Playfair Display',serif;background:linear-gradient(180deg,var(--rosa-chiaro),#fff);color:var(--testo)}
+nav{position:fixed;top:0;width:100%;background:rgba(255,230,241,.9);backdrop-filter:blur(10px);display:flex;justify-content:space-between;align-items:center;padding:20px 60px;z-index:10}
+nav a{margin-left:25px;text-decoration:none;color:var(--rosa-scuro);font-weight:600}
+nav .logo{font-family:'Great Vibes',cursive;font-size:40px}
+header{height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 20px;background:linear-gradient(180deg,var(--rosa-medio),var(--rosa-chiaro))}
+header h1{font-family:'Great Vibes',cursive;font-size:110px;margin:0;color:var(--rosa-scuro)}
+header p{font-size:24px;max-width:820px;margin:30px auto}
+.btn{display:inline-block;margin-top:35px;padding:16px 44px;border-radius:50px;background:var(--rosa-scuro);color:white;text-decoration:none;font-weight:600;letter-spacing:1px}
+section{padding:120px 20px;max-width:1200px;margin:auto}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+img{width:100%;border-radius:35px;box-shadow:0 25px 50px rgba(0,0,0,.18)}
+h2{font-size:46px;color:var(--rosa-scuro)}
+.card{background:white;border-radius:45px;padding:70px;box-shadow:0 20px 50px rgba(0,0,0,.15)}
+.notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:35px;margin-top:50px}
+.note{background:var(--rosa-chiaro);padding:40px;border-radius:35px;text-align:center}
+.timeline{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px;margin-top:60px}
+.timeline div{background:white;padding:40px;border-radius:35px;box-shadow:0 15px 40px rgba(0,0,0,.12)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px;margin-top:60px}
+footer{background:var(--rosa-scuro);color:white;text-align:center;padding:70px 20px}
+@media(max-width:900px){.grid{grid-template-columns:1fr}header h1{font-size:72px}nav{padding:20px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Frida</div>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#profumo">Il Profumo</a>
+    <a href="#note">Note</a>
+    <a href="#storia">Storia</a>
+    <a href="#gallery">Gallery</a>
+  </div>
+</nav>
+
+<header id="home">
+  <div>
+    <h1>Frida</h1>
+    <p>Un'eau de parfum ispirata all'arte, alla forza femminile e alla bellezza dell'imperfezione. Un'essenza che racconta libertà, passione e identità.</p>
+    <a href="#profumo" class="btn">Scopri Frida</a>
+  </div>
+</header>
+
+<section id="profumo" class="grid">
+  <div>
+    <h2>L'essenza di Frida</h2>
+    <p>Frida è un profumo artistico che nasce dall'incontro tra emozione e materia. Ogni nota racconta una storia intensa, trasformando la fragilità in forza e la passione in bellezza eterna.</p>
+    <p><strong>Eau de Parfum · 100 ml</strong></p>
+  </div>
+  <img src="WhatsApp Image 2026-01-12 at 15.20.13.jpeg" alt="Packaging Frida">
+</section>
+
+<section id="note" class="card">
+  <h2>Piramide Olfattiva</h2>
+  <div class="notes">
+    <div class="note"><strong>Note di Testa</strong><br>Agrumi luminosi · Fiori esotici</div>
+    <div class="note"><strong>Note di Cuore</strong><br>Gelsomino · Rosa · Spezie calde</div>
+    <div class="note"><strong>Note di Fondo</strong><br>Legni ambrati · Vaniglia · Muschio</div>
+  </div>
+</section>
+
+<section id="storia">
+  <h2>La storia dietro Frida</h2>
+  <div class="timeline">
+    <div><strong>Ispirazione</strong><br>Un omaggio alla donna libera, creativa e intensa.</div>
+    <div><strong>Creazione</strong><br>Un equilibrio tra fiori, spezie e legni sensuali.</div>
+    <div><strong>Messaggio</strong><br>Essere se stessi è il gesto più rivoluzionario.</div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2 style="text-align:center">Gallery Artistica</h2>
+  <div class="gallery">
+    <img src="WhatsApp Image 2026-01-12 at 15.20.13.jpeg">
+    <img src="WhatsApp Image 2026-01-12 at 15.20.13.jpeg">
+    <img src="WhatsApp Image 2026-01-12 at 15.20.13.jpeg">
+  </div>
+</section>
+
+<footer>
+  <p>© Frida Profumeria Artistica</p>
+  <p>Arte · Femminilità · Libertà</p>
+</footer>
+
+</body>
+</html>
